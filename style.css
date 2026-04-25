@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #fff;
+}
+
+ .titulo {
+
+      text-align: center;
+      background-color: orange;
+      color:white;
+      padding: 20px;
+
+     }
+
+
+     .menu {
+
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+
+     }
+
+     .menu a {
+
+         color:white;
+         margin:10px;
+         text-decoration: none;
+
+
+     }
+
+
+     .conteudo {
+
+
+         text-align: center;
+         padding: 20px;
+
+     }
+
+      .card {
+
+
+          border: 1px  solid #ccc;
+          width: 200px;
+           display: inline-block;
+           margin: 10px;
+           padding: 10px;
+      }
+
+      .card img {
+
+         width: 100%;
+      }
+
+
+      
