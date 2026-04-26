@@ -1,101 +1,199 @@
+/* ===================== */
+/* CORPO DA PÁGINA */
+/* ===================== */
 body {
-    background-image: url("banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #2b0f0f; /* fundo vinho escuro */
+    margin: 0; /* remove margem padrão do navegador */
+    font-family: 'Poppins', sans-serif; /* fonte principal do site */
 }
 
- .titulo {
+/* ===================== */
+/* TÍTULO PRINCIPAL */
+/* ===================== */
+.titulo {
+    text-align: center; /* centraliza o texto */
+    background: orange; /* fundo laranja */
+    color: white; /* cor do texto */
+    padding: 20px; /* espaço interno */
+    font-family: 'Playfair Display', serif; /* fonte mais elegante */
+    letter-spacing: 4px; /* espaçamento entre letras */
+    margin: 0; /* remove margem padrão */
+}
 
-      text-align: center;
-      background: orange;
-      color:white;
-      padding: 20px;
+/* ===================== */
+/* MENU */
+/* ===================== */
+.menu {
+    text-align: center; /* centraliza os links */
+    background-color: black; /* fundo preto */
+    padding: 20px; /* espaço interno */
+}
 
-     }
+/* LINKS DO MENU */
+.menu a {
+    color: white; /* cor do texto */
+    margin: 10px; /* espaço entre links */
+    text-decoration: none; /* remove sublinhado */
+    font-size: 15px; /* tamanho do texto */
+}
+
+/* HOVER DO MENU */
+.menu a:hover {
+    color: orange; /* muda cor ao passar o mouse */
+}
+
+/* ===================== */
+/* CONTEÚDO PRINCIPAL */
+/* ===================== */
+.conteudo {
+    display: flex; /* coloca texto e imagem lado a lado */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* separa os elementos */
+    min-height: 60vh; /* altura mínima da seção */
+    padding: 80px 140px; /* espaçamento interno */
+}
+
+/* ===================== */
+/* TEXTO */
+/* ===================== */
+.texto {
+    width: 45%; /* ocupa metade da tela */
+    display: flex; /* ativa flexbox */
+    align-items: center; /* centraliza conteúdo interno */
+}
+
+/* TÍTULO DO TEXTO */
+.conteudo h2 {
+    color: white; /* cor branca */
+    text-align: left; /* alinhado à esquerda */
+    font-size: 44px; /* tamanho grande */
+    line-height: 1.2; /* espaçamento entre linhas */
+}
+
+/* ===================== */
+/* IMAGEM PRINCIPAL */
+/* ===================== */
+.imagem-principal {
+    width: 500px; /* largura da imagem */
+    max-width: 50%; /* não passa de metade da tela */
+    border-radius: 20px; /* bordas arredondadas */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6); /* sombra */
+}
+
+/* ===================== */
+/* BOTÃO */
+/* ===================== */
+/* BOTÃO */
+.botao {
+    background-color: orange;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: 0.2s; /* animação suave */
+}
+
+/* HOVER DO BOTÃO */
+.botao:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
 
 
-     .menu {
+/* ===================== */
+/* ÁREA DOS CARDS */
+/* ===================== */
+.cards {
+    text-align: center; /* centraliza os cards */
+    padding: 40px; /* espaço interno */
+}
 
-        text-align: center;
-        background-color: black;
-        padding: 20px;
+/* ===================== */
+/* CARD */
+/* ===================== */
+/* CARD */
+.card {
+    border: 1px solid white;
+    width: 200px;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    background-color: #1f1a17;
+    vertical-align: top;
+    transition: 0.3s; /* animação suave */
+}
 
-     }
+/* HOVER DO CARD */
+.card:hover {
+    transform: scale(1.05);
+}
 
-     .menu a {
+/* IMAGEM DO CARD */
+.card img {
+    width: 100%; /* ocupa tudo */
+    height: 200px; /* altura fixa */
+    object-fit: cover; /* corta sem distorcer */
+}
 
-         color:white;
-         margin:10px;
-         text-decoration: none;
+/* TEXTO DO CARD */
+.card h3 {
+    text-align: center; /* centraliza nome */
+}
 
-
-     }
-
-
-     .conteudo {
-
-
-         text-align: center;
-         padding: 20px;
-
-     }
-
-      .card {
-
-
-          border: 1px  solid #000000;
-          width: 200px;
-           display: inline-block;
-           margin: 10px;
-           padding: 10px;
-      }
-
-      .card img {
-
-         width: 100%;
-         height:200px;
-         object-fit: cover;
-      }
-        
-
-      
-
-      
-      .conteudo {
-
-        text-align: center;
-         padding: 40px;
-      }
-
-        .conteudo h2 {
-
-            font-size: 18px;
+/* PREÇO */
+.card p {
+    font-size: 18px; /* tamanho */
+    text-align: center; /* centraliza */
+}
 
 
-        }
+ /* ===================== */
+/* RESPONSIVO - CELULAR */
+/* ===================== */
+@media (max-width: 768px) {
 
-         .conteudo p {
+    /* Diminui o espaço do conteúdo no celular */
+    .conteudo {
+        flex-direction: column; /* coloca texto e imagem um embaixo do outro */
+        text-align: center; /* centraliza o conteúdo */
+        padding: 40px 20px; /* diminui o espaçamento lateral */
+    }
 
-            font-size:18px;
+    /* Texto ocupa a largura toda no celular */
+    .texto {
+        width: 100%; /* ocupa toda a tela */
+        justify-content: center; /* centraliza o bloco */
+    }
 
-         }
+    /* Título fica centralizado no celular */
+    .conteudo h2 {
+        text-align: center; /* centraliza o texto */
+        font-size: 32px; /* diminui o tamanho */
+    }
 
-           .imagem-principal {
-            width: 350px;
-            border-radius: 20px;
-           }
+    /* Imagem ocupa quase toda a tela */
+    .imagem-principal {
+        width: 100%; /* ocupa largura disponível */
+        max-width: 350px; /* limita tamanho máximo */
+        margin-top: 30px; /* espaço acima da imagem */
+    }
 
-            .botao {
-                background-color: orange;
-                color:white;
-                padding:12px 25px;
-                text-decoration: none;
-                border-radius: 10px;
-                font-weight: bold;
+    /* Menu fica mais confortável no celular */
+    .menu a {
+        display: inline-block; /* melhora o espaçamento */
+        margin: 8px; /* espaço entre links */
+    }
 
-            }
-
-             .botao:hover {
-                background-color: darkorange;
-             }
+    /* Cards ficam um embaixo do outro */
+    .card {
+        width: 80%; /* ocupa boa parte da tela */
+        max-width: 260px; /* limite máximo */
+    }
+}
