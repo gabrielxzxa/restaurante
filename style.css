@@ -3,87 +3,87 @@
 /* ===================== */
 body {
     background-color: #2b0f0f; /* fundo vinho escuro */
-    margin: 0; /* remove margem padrão do navegador */
-    font-family: 'Poppins', sans-serif; /* fonte principal do site */
+    margin: 0; /* remove margem padrão */
+    font-family: 'Poppins', sans-serif; /* fonte principal */
 }
 
 /* ===================== */
 /* TÍTULO PRINCIPAL */
 /* ===================== */
 .titulo {
-    text-align: center; /* centraliza o texto */
+    text-align: center; /* centraliza */
     background: orange; /* fundo laranja */
     color: white; /* cor do texto */
     padding: 20px; /* espaço interno */
-    font-family: 'Playfair Display', serif; /* fonte mais elegante */
-    letter-spacing: 4px; /* espaçamento entre letras */
-    margin: 0; /* remove margem padrão */
+    font-family: 'Playfair Display', serif; /* fonte elegante */
+    letter-spacing: 4px; /* espaço entre letras */
+    margin: 0; /* remove margem */
 }
 
 /* ===================== */
 /* MENU */
 /* ===================== */
 .menu {
-    text-align: center; /* centraliza os links */
-    background-color: black; /* fundo preto */
-    padding: 20px; /* espaço interno */
+    text-align: center; /* centraliza links */
+    background-color: black; /* fundo */
+    padding: 20px;
 }
 
 /* LINKS DO MENU */
 .menu a {
-    color: white; /* cor do texto */
-    margin: 10px; /* espaço entre links */
+    color: white;
+    margin: 10px;
     text-decoration: none; /* remove sublinhado */
-    font-size: 15px; /* tamanho do texto */
+    font-size: 15px;
 }
 
 /* HOVER DO MENU */
 .menu a:hover {
-    color: orange; /* muda cor ao passar o mouse */
+    color: orange;
 }
 
 /* ===================== */
 /* CONTEÚDO PRINCIPAL */
 /* ===================== */
 .conteudo {
-    display: flex; /* coloca texto e imagem lado a lado */
-    align-items: center; /* centraliza verticalmente */
-    justify-content: space-between; /* separa os elementos */
-    min-height: 60vh; /* altura mínima da seção */
-    padding: 80px 140px; /* espaçamento interno */
+    display: flex; /* lado a lado */
+    align-items: center; /* centraliza vertical */
+    justify-content: space-between; /* separa */
+    min-height: 60vh; /* altura mínima */
+    padding: 80px 140px;
 }
 
 /* ===================== */
 /* TEXTO */
 /* ===================== */
 .texto {
-    width: 45%; /* ocupa metade da tela */
-    display: flex; /* ativa flexbox */
-    align-items: center; /* centraliza conteúdo interno */
+    width: 45%;
+    display: flex;
+    align-items: center;
 }
 
-/* TÍTULO DO TEXTO */
+/* TÍTULO */
 .conteudo h2 {
-    color: white; /* cor branca */
-    text-align: left; /* alinhado à esquerda */
-    font-size: 44px; /* tamanho grande */
-    line-height: 1.2; /* espaçamento entre linhas */
+    color: white;
+    text-align: left;
+    font-size: 44px;
+    line-height: 1.2;
 }
 
 /* ===================== */
 /* IMAGEM PRINCIPAL */
 /* ===================== */
 .imagem-principal {
-    width: 500px; /* largura da imagem */
-    max-width: 50%; /* não passa de metade da tela */
-    border-radius: 20px; /* bordas arredondadas */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.6); /* sombra */
+    width: 500px;
+    max-width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+    display: block; /* ajuda na centralização */
 }
 
 /* ===================== */
 /* BOTÃO */
 /* ===================== */
-/* BOTÃO */
 .botao {
     background-color: orange;
     color: white;
@@ -95,7 +95,7 @@ body {
     margin-top: 25px;
     font-size: 16px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: 0.2s; /* animação suave */
+    transition: 0.2s; /* animação */
 }
 
 /* HOVER DO BOTÃO */
@@ -104,19 +104,17 @@ body {
     transform: scale(1.05);
 }
 
-
 /* ===================== */
 /* ÁREA DOS CARDS */
 /* ===================== */
 .cards {
-    text-align: center; /* centraliza os cards */
-    padding: 40px; /* espaço interno */
+    text-align: center;
+    padding: 40px;
 }
 
 /* ===================== */
 /* CARD */
 /* ===================== */
-/* CARD */
 .card {
     border: 1px solid white;
     width: 200px;
@@ -127,7 +125,7 @@ body {
     border-radius: 10px;
     background-color: #1f1a17;
     vertical-align: top;
-    transition: 0.3s; /* animação suave */
+    transition: 0.3s;
 }
 
 /* HOVER DO CARD */
@@ -137,65 +135,65 @@ body {
 
 /* IMAGEM DO CARD */
 .card img {
-    width: 100%; /* ocupa tudo */
-    height: 200px; /* altura fixa */
-    object-fit: cover; /* corta sem distorcer */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* TEXTO DO CARD */
 .card h3 {
-    text-align: center; /* centraliza nome */
+    text-align: center;
 }
 
 /* PREÇO */
 .card p {
-    font-size: 18px; /* tamanho */
-    text-align: center; /* centraliza */
+    font-size: 18px;
+    text-align: center;
 }
 
-
- /* ===================== */
-/* MOBILE MELHORADO */
+/* ===================== */
+/* MOBILE (RESPONSIVO) */
 /* ===================== */
 @media (max-width: 768px) {
 
     /* CONTEÚDO PRINCIPAL */
     .conteudo {
-        flex-direction: column; /* coloca tudo em coluna */
-        align-items: center; /* centraliza */
-        justify-content: center; /* centraliza vertical */
-        min-height: auto; /* tira aquela altura gigante */
-        padding: 40px 20px; /* menos espaço */
-        text-align: center; /* centraliza texto */
+        flex-direction: column; /* empilha */
+        align-items: center;
+        justify-content: center;
+        min-height: auto;
+        height: auto; /* 🔥 evita espaço bugado */
+        padding: 40px 20px;
+        text-align: center;
     }
 
     /* TEXTO */
     .texto {
-        width: 100%; /* ocupa tudo */
-        justify-content: center; /* centraliza */
+        width: 100%;
+        justify-content: center;
     }
 
     /* TÍTULO */
     .conteudo h2 {
-        text-align: center; /* centraliza */
-        font-size: 30px; /* diminui um pouco */
+        text-align: center;
+        font-size: 30px;
     }
 
     /* IMAGEM */
     .imagem-principal {
-        max-width: 90%; /* ocupa mais da tela */
-        margin-top: 20px; /* espaço acima */
+        max-width: 90%;
+        margin: 20px auto 0 auto; /* centraliza */
     }
 
     /* BOTÃO */
     .botao {
-        font-size: 14px; /* menor no celular */
-        padding: 12px 20px; /* menor */
+        font-size: 14px;
+        padding: 12px 20px;
     }
 
     /* CARDS */
     .card {
-        width: 90%; /* ocupa quase toda tela */
-        max-width: 300px; /* limite */
+        width: 90%;
+        max-width: 300px;
     }
 }
