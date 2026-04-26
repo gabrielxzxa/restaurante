@@ -155,45 +155,47 @@ body {
 
 
  /* ===================== */
-/* RESPONSIVO - CELULAR */
+/* MOBILE MELHORADO */
 /* ===================== */
 @media (max-width: 768px) {
 
-    /* Diminui o espaço do conteúdo no celular */
+    /* CONTEÚDO PRINCIPAL */
     .conteudo {
-        flex-direction: column; /* coloca texto e imagem um embaixo do outro */
-        text-align: center; /* centraliza o conteúdo */
-        padding: 40px 20px; /* diminui o espaçamento lateral */
+        flex-direction: column; /* coloca tudo em coluna */
+        align-items: center; /* centraliza */
+        justify-content: center; /* centraliza vertical */
+        min-height: auto; /* tira aquela altura gigante */
+        padding: 40px 20px; /* menos espaço */
+        text-align: center; /* centraliza texto */
     }
 
-    /* Texto ocupa a largura toda no celular */
+    /* TEXTO */
     .texto {
-        width: 100%; /* ocupa toda a tela */
-        justify-content: center; /* centraliza o bloco */
+        width: 100%; /* ocupa tudo */
+        justify-content: center; /* centraliza */
     }
 
-    /* Título fica centralizado no celular */
+    /* TÍTULO */
     .conteudo h2 {
-        text-align: center; /* centraliza o texto */
-        font-size: 32px; /* diminui o tamanho */
+        text-align: center; /* centraliza */
+        font-size: 30px; /* diminui um pouco */
     }
 
-    /* Imagem ocupa quase toda a tela */
+    /* IMAGEM */
     .imagem-principal {
-        width: 100%; /* ocupa largura disponível */
-        max-width: 350px; /* limita tamanho máximo */
-        margin-top: 30px; /* espaço acima da imagem */
+        max-width: 90%; /* ocupa mais da tela */
+        margin-top: 20px; /* espaço acima */
     }
 
-    /* Menu fica mais confortável no celular */
-    .menu a {
-        display: inline-block; /* melhora o espaçamento */
-        margin: 8px; /* espaço entre links */
+    /* BOTÃO */
+    .botao {
+        font-size: 14px; /* menor no celular */
+        padding: 12px 20px; /* menor */
     }
 
-    /* Cards ficam um embaixo do outro */
+    /* CARDS */
     .card {
-        width: 80%; /* ocupa boa parte da tela */
-        max-width: 260px; /* limite máximo */
+        width: 90%; /* ocupa quase toda tela */
+        max-width: 300px; /* limite */
     }
 }
